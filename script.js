@@ -9,6 +9,11 @@ for(let i = 0; i < 100; i++) {
         value = "fizz"
         box.classList.add("violet")
     }
+
+    else if(!((i + 1) % 5)){
+        value = "buzz"
+        box.classList.add("blu")
+    }
     
     boxesContainer.append(box);
 }
