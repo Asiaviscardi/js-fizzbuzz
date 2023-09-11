@@ -5,14 +5,19 @@ for(let i = 0; i < 100; i++) {
     box.classList.add("box");
     box.append(i + 1);
 
-    if(!((i + 1) % 3)){
-        value = "fizz"
-        box.classList.add("violet")
+    if(!((i + 1) % 3 && (i + 1) % 5)){
+        value = "fizzbuzz"
+        box.classList.add("acqua")
     }
 
     else if(!((i + 1) % 5)){
         value = "buzz"
         box.classList.add("blu")
+    }
+
+    else if(!((i + 1) % 3)){
+        value = "fizz"
+        box.classList.add("violet")
     }
     
     boxesContainer.append(box);
